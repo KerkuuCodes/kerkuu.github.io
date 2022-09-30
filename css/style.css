@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Megrim';
+  height: 100%;
+  width: 100%; }
+
+.hr {
+  width: 80%;
+  height: 5px;
+  border-color: #252525;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-style: none none  solid none;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1 {
+  padding: 50px;
+  text-align: center;
+  font-size: 50px; }
+
+.section__header {
+  width: 100%;
+  height: 100%; }
+  .section__header .header__text {
+    text-align: center;
+    margin: 30vh;
+    font-size: 6vw; }
+
+.day {
+  background-image: url("../assets/imgs/header-bg-img-day.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  .day .header__text {
+    color: #252525; }
+  .day a {
+    color: #252525; }
+
+.night {
+  background-image: url("../assets/imgs/header-bg-img-night.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  .night .header__text {
+    color: white; }
+  .night a {
+    color: white; }
+    .night a:visited {
+      color: white; }
+
+.header__nav {
+  margin-inline: auto;
+  padding-top: 5vh;
+  width: 90%; }
+  .header__nav div {
+    float: right; }
+  .header__nav a {
+    font-size: 1.2vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 1vw; }
+
+a:visited, a {
+  text-decoration: none; }
+
+a:first-child {
+  margin-left: 0; }
+
+.section__about {
+  width: 100%; }
+  .section__about .div__about .about__content {
+    margin-top: 50px;
+    display: flex;
+    margin-inline: 10%;
+    justify-content: space-between; }
+    .section__about .div__about .about__content .about__content__text {
+      width: 50%;
+      display: flex;
+      font-family: 'Reem Kufi Fun';
+      color: #181717;
+      align-items: center; }
+      .section__about .div__about .about__content .about__content__text p {
+        letter-spacing: 1.5px;
+        font-size: 30px;
+        font-weight: 400; }
+        .section__about .div__about .about__content .about__content__text p .text--bold {
+          color: #000;
+          font-weight: 800;
+          font-size: 32px; }
+        .section__about .div__about .about__content .about__content__text p .text--sem-bold {
+          color: #000;
+          font-weight: 600;
+          font-size: 32px; }
+    .section__about .div__about .about__content .about__content__img div {
+      width: 280px;
+      height: 360px; }
+    .section__about .div__about .about__content .about__content__img .img-back {
+      margin-top: -15px;
+      margin-left: -15px;
+      z-index: 1;
+      background-color: rgba(127, 161, 233, 0.5); }
+    .section__about .div__about .about__content .about__content__img .about__img {
+      z-index: 2;
+      position: absolute;
+      background-image: url("../assets/imgs/self-img.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%; }
+  .section__about .div__about .skill--list-quote {
+    display: flex;
+    margin-inline: 10%;
+    justify-content: space-between;
+    padding-bottom: 10%; }
+    .section__about .div__about .skill--list-quote .skill__list .skill-list--item {
+      display: flex;
+      padding-bottom: 20px; }
+      .section__about .div__about .skill--list-quote .skill__list .skill-list--item p {
+        font-family: monospace;
+        font-size: 35px;
+        margin-top: auto;
+        margin-bottom: auto; }
+      .section__about .div__about .skill--list-quote .skill__list .skill-list--item .skill--star {
+        width: 40px;
+        margin-left: 10px; }
+    .section__about .div__about .skill--list-quote .skill-quote {
+      font-family: 'Reem Kufi Fun'; }
+      .section__about .div__about .skill--list-quote .skill-quote p {
+        position: relative;
+        font-size: 35px;
+        top: 50%;
+        transform: translate(0%, -80%); }
+
+.aday {
+  background-color: #D7DBD8; }
+
+.anight {
+  background-color: #B2C3CF; }
+
+.section__contact .contact__links {
+  padding-bottom: 50px;
+  padding-inline: 10%; }
+  .section__contact .contact__links a {
+    position: relative;
+    margin-bottom: 20px;
+    display: block; }
+    .section__contact .contact__links a img {
+      width: 45px;
+      background-color: white;
+      border-radius: 25%; }
+    .section__contact .contact__links a samp {
+      color: #000;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      font-size: 25px;
+      margin-left: 10px; }
+
+.section__contact .footer p {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Reem Kufi Fun'; }
+
+.cday {
+  background-color: #637C74; }
+
+.cnight {
+  background-color: #7A97AE; }

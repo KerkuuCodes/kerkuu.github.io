@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+$txt-color-day: rgb(46, 46, 46);
+$txt-color-night: rgb(255, 255, 255);
+
+$txt-body:rgb(37, 37, 37);
+
+
+
+body{
+    font-family: 'Megrim';
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+// Extra COmponents
+.hr{
+    width: 80%;
+    height: 5px;
+    border-color: $txt-body;
+    margin-top: 50px; margin-bottom: 0px;
+    border-style: none none  solid none ;
+    margin-left: auto; margin-right: auto;
+
+}
+
+
+
+h1{
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.section__header{
+    
+    width: 100%;
+    height: 100%;
+
+
+    .header__text{
+        text-align: center;
+        margin: 30vh;
+        font-size: 6vw;
+
+    }
+      
+    
+}
+.day{
+    background-image: url("../assets/imgs/header-bg-img-day.png");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+
+    .header__text{
+        color: $txt-body;
+    }
+    a{
+        color: $txt-body;
+    }
+
+
+
+
+}
+.night{
+    background-image: url("../assets/imgs/header-bg-img-night.png");
+    
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+
+    .header__text{
+        color: rgb(255, 255, 255);
+    }
+    a{
+        color: rgb(255, 255, 255);
+        &:visited{
+            color: rgb(255, 255, 255);
+            
+        }
+    }
+
+
+
+}
+
+
+
+
+.header__nav{
+    margin-inline:auto ;
+    padding-top: 5vh;
+    width: 90%;
+
+    div{
+        float: right;
+    }
+
+    a{
+        font-size: 1.2vw;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-left: 1vw;
+        
+
+    }
+    
+    
+}
+
+
+
+a:visited,a{
+    text-decoration: none;
+
+}
+a:first-child{
+    margin-left: 0;   
+}
+
+
+
+
+
+.section__about{
+    width: 100%;
+    
+    
+    .div__about{
+        
+        
+
+        
+
+        .about__content{
+            margin-top: 50px;
+            display: flex;
+            margin-inline:10% ;
+            justify-content: space-between;
+
+            
+
+            .about__content__text{
+                width: 50%;
+                display: flex;
+                font-family: 'Reem Kufi Fun';
+                color: rgb(24, 23, 23);
+                align-items: center;
+
+                p{
+                    
+
+                    letter-spacing: 1.5px;
+                    font-size: 30px;
+                    font-weight: 400;
+                    .text--bold{
+                        color: #000;
+                        font-weight: 800;
+                        font-size: 32px;
+                        
+                    }
+                    .text--sem-bold{
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 32px;
+                        
+                    }
+                }
+            }
+
+            .about__content__img{
+                div{
+                    width: 280px;
+                    height: 360px;
+                    
+                   
+                }
+                .img-back{
+                    
+                   margin-top: -15px;
+                   margin-left: -15px;
+                    z-index: 1;
+                    background-color: rgba(127,161,233,.5);
+                }
+                .about__img{
+                    z-index: 2;
+                    position: absolute;
+                    background-image: url('../assets/imgs/self-img.png');
+                    background-repeat: no-repeat; 
+                    background-size: 100% 100%;
+                    
+            
+                }
+
+                
+            }
+        }
+
+        .skill--list-quote{
+            display: flex;
+            margin-inline:10% ;
+            justify-content: space-between;
+            padding-bottom: 10%;
+
+
+
+
+            .skill__list{
+                
+                
+    
+                .skill-list--item{
+                    display: flex;
+                    padding-bottom: 20px;
+    
+                    p{
+                        font-family: monospace;
+                        font-size: 35px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+    
+                    .skill--star{
+                        width: 40px;
+                        margin-left: 10px;
+                    }
+                    
+                }
+            }
+
+            .skill-quote{
+                font-family: 'Reem Kufi Fun';
+                p{
+                    position: relative;
+                    font-size: 35px;
+                    top: 50%;
+                    transform: translate(0% ,-80%);
+                }
+
+            }
+        }
+
+        
+        
+
+    }
+
+    
+
+    
+    
+}
+.aday{
+    background-color: #D7DBD8;
+
+}
+
+.anight{      
+    background-color: #B2C3CF;
+
+}
+
+
+
+
+
+
+
+
+.section__contact{
+    
+    
+    
+
+    .contact__links{
+
+        padding-bottom: 50px;
+        padding-inline:10%;
+
+        a{
+            position: relative;
+            margin-bottom: 20px;
+            display: block;
+
+
+
+            img{
+                width: 45px;
+                
+                background-color: white;
+                border-radius: 25%;
+                
+            }
+
+            samp{
+                color: #000;
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -50%);
+                font-size: 25px;
+                margin-left: 10px;
+
+
+            }
+        }
+    }
+
+
+    .footer{
+        
+        p{
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Reem Kufi Fun';
+        }
+    }
+
+    
+    
+}
+
+.cday{
+    background-color: #637C74;
+
+}
+
+.cnight{      
+    background-color: #7A97AE;
+
+}
