@@ -37,6 +37,16 @@ video {
        
 <script>
     document.getElementById('vid').play();
+
+    document.getElementsByTagName("video")[0].removeAttribute("muted");
+
+    function toggleMute() {
+
+  var video=document.getElementById("myVideo");
+
+  video.muted = !video.muted;
+
+}
 </script>
     </body>
 
