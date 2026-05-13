@@ -8,6 +8,14 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 var dateTime = date+' '+time;
 
 
+const media = document.getElementById('myMedia');
+
+// Unmute on the very first click the user makes anywhere on the page
+document.body.addEventListener('click', () => {
+    media.muted = false;
+}, { once: true });
+
+
 function currentTime() {
     let date = new Date(); 
     let hh = date.getHours();
