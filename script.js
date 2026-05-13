@@ -15,6 +15,16 @@ document.body.addEventListener('click', () => {
     media.muted = false;
 }, { once: true });
 
+if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
+    // Media can play with sound immediately
+    media.muted = false;
+    media.play();
+} else {
+    // Must start muted or wait for interaction
+    media.muted = true;
+    media.play();
+}
+
 
 function currentTime() {
     let date = new Date(); 
